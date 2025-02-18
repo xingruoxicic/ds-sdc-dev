@@ -1,6 +1,8 @@
-@use "../../../scss/grid";
-@use "../../../scss/page";
-@use "~@ircc-ca/ds-sdc-core/typography/typography";
+@use '../../../scss/grid';
+@use '../../../scss/page';
+// @use "~@ircc-ca/ds-sdc-core/typography/typography";
+//@use '~@ircc-ca/ds-sdc-core/typography/typography';
+@use '../../../../../core-library/typography/typography';
 
 :host {
   @include grid.row;
@@ -29,7 +31,7 @@
     margin: {
       top: 24px;
       bottom: 16px;
-    };
+    }
   }
 
   .code-box {
@@ -43,14 +45,14 @@
 
     .code {
       color: var(--text-secondary);
-      font-family: "Roboto Mono", monospace;
+      font-family: 'Roboto Mono', monospace;
       font-size: 14px;
       line-height: 20px;
       white-space: pre-line;
       margin: {
         top: 20px;
         bottom: 0;
-      };
+      }
     }
   }
 }

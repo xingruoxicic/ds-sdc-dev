@@ -1,4 +1,5 @@
-@use '~@ircc-ca/ds-sdc-core/index' as ircc-ds;
+// @use '~@ircc-ca/ds-sdc-core/index' as ircc-ds;
+@use '../../core-library/index' as ircc-ds;
 @include ircc-ds.theme-init-required(
   ircc-ds.palette-journeylab(),
   default,

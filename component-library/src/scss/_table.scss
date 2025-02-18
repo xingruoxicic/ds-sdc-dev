@@ -1,4 +1,5 @@
-@use '~@ircc-ca/ds-sdc-core/typography/typography';
+//@use '~@ircc-ca/ds-sdc-core/typography/typography';
+@use '../../../core-library/typography/typography';
 $radius: 6px;
 table {
   border: 1px solid var(--border);
@@ -8,7 +9,8 @@ table {
   display: inline-block;
   overflow: auto;
   white-space: nowrap;
-  th, td {
+  th,
+  td {
     padding: 16px;
     border: 1px solid;
     border-color: var(--divider);
