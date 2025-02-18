@@ -46,7 +46,7 @@
     "zone.js": "^0.13.3"
   },
   "devDependencies": {
-    "@angular-builders/jest": "^15",
+    "@angular-builders/jest": "^17",
     "@angular-devkit/build-angular": "^16",
     "@angular-eslint/builder": "19.1.0",
     "@angular-eslint/eslint-plugin": "19.1.0",
@@ -82,6 +82,6 @@
     "stylelint-config-standard": "~28.0.0",
     "ts-jest": "^29",
     "ts-node": "^10.1.0",
-    "typescript": "~4.9.5"
+    "typescript": "^5"
   }
 }
