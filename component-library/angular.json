@@ -39,9 +39,13 @@
               }
             ],
             "stylePreprocessorOptions": {
-              "includePaths": ["./node_modules"]
+              "includePaths": [
+                "./node_modules"
+              ]
             },
-            "styles": ["src/scss/styles.scss"],
+            "styles": [
+              "src/scss/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -118,7 +122,10 @@
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
-            "lintFilePatterns": ["src/**/*.ts", "src/**/*.html"]
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
           }
         }
       }
@@ -155,7 +162,10 @@
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
-            "lintFilePatterns": ["src/**/*.ts", "src/**/*.html"]
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
           }
         }
       }
@@ -164,5 +174,13 @@
   "defaultProject": "component-library",
   "cli": {
     "analytics": false
+  },
+  "schematics": {
+    "@angular-eslint/schematics:application": {
+      "setParserOptionsProject": true
+    },
+    "@angular-eslint/schematics:library": {
+      "setParserOptionsProject": true
+    }
   }
 }
