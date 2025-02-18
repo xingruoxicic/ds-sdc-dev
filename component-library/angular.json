@@ -171,7 +171,6 @@
       }
     }
   },
-  "defaultProject": "component-library",
   "cli": {
     "analytics": false
   },
