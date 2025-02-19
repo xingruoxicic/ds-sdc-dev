@@ -54,7 +54,7 @@
     "@angular-eslint/schematics": "19.1.0",
     "@angular-eslint/template-parser": "19.1.0",
     "@angular/cli": "^17.3.12",
-    "@angular/compiler-cli": "^17",
+    "@angular/compiler-cli": "^18",
     "@angular/language-service": "^16.2.12",
     "@biesbjerg/ngx-translate-extract": "^7.0.3",
     "@biesbjerg/ngx-translate-extract-marker": "^1.0.0",
