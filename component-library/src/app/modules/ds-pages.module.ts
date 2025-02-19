@@ -32,7 +32,7 @@ import { InputDocCodeComponent } from '@app/pages/input-documentation/input-doc-
 import { EncapsulatedElementComponent } from '@app/components/encapsulated-element/encapsulated-element.component';
 import { RequestFormComponent } from '@app/pages/request-form/request-form.component';
 import { BannerDocumentationComponent } from '@app/pages/banner-documentation/banner-documentation.component';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { IrccDsAngularNavigationModule } from 'ircc-ds-angular-component-library';
 
 import { DatePickerDocCodeComponent } from '@app/pages/date-picker-documentation/date-picker-doc-code.component';
@@ -55,83 +55,77 @@ import { CheckboxDocumentationComponent } from '@app/pages/checkbox-documentatio
 import { SelectDocumentationComponent } from '@app/pages/select-documentation/select-documentation.component';
 import { SelectDocCodeComponent } from '@app/pages/select-documentation/select-doc-code.component';
 
-@NgModule({
-  declarations: [
-    TitleSlugUrlComponent,
-    resizableContainerComponent,
-    codeViewerComponent,
-    accordionContainerComponent,
-    OverviewComponent,
-    ForDesignersComponent,
-    ForDevelopersComponent,
-    UtilitiesComponent,
-    ContactComponent,
-    SlugifyPipe,
-    SafeHtmlPipe,
-    SideNavComponent,
-    ComponentPreviewComponent,
-    InfoTextSmallComponent,
-    ShellComponent,
-    codeViewComponent,
-    BannerDocCodeComponent,
-    InteractiveDemoComponent,
-    ButtonDocCodeComponent,
-    ButtonDocumentationComponent,
-    InputDocumentationComponent,
-    SelectDocumentationComponent,
-    ComponentPreviewComponent,
-    InteractiveDemoComponent,
-    InputDocCodeComponent,
-    SelectDocCodeComponent,
-    EncapsulatedElementComponent,
-    RequestFormComponent,
-    DatePickerDocCodeComponent,
-    DatePickerDocumentationComponent,
-    BannerDocumentationComponent,
-    IconButtonDocumentationComponent,
-    IconButtonDocCodeComponent,
-    AutocompleteDocumentationComponent,
-    emailVerificationComponent,
-    SpinnerDocCodeComponent,
-    SpinnerDocumentationComponent,
-    AutocompleteDocumentationComponent,
-    CheckboxDocCodeComponent,
-    CheckboxDocumentationComponent,
-    ProgressIndicatorDocCodeComponent,
-    ProgressIndicatorDocumentationComponent,
-    AutocompleteDocumentationComponent
-  ],
-  imports: [
-    CommonModule,
-    SharedModule,
-    ClipboardModule,
-    QaModule,
-    AccessibilityDemoModule,
-    ShelldModule,
-    HighlightModule,
-    AccessibilityDemoModule,
-    IrccDsAngularNavigationModule,
-    TranslateModule,
-    SharedModule,
-    HttpClientModule,
-    FormsModule,
-    ReactiveFormsModule
-  ],
-  exports: [
-    TitleSlugUrlComponent,
-    codeViewerComponent,
-    accordionContainerComponent,
-    resizableContainerComponent
-  ],
-  providers: [
-    SideNavConfig,
-    {
-      provide: HIGHLIGHT_OPTIONS,
-      useValue: {
-        fullLibraryLoader: () => import('highlight.js'),
-        themePath: 'assets/code-viewer.css'
-      }
-    }
-  ]
-})
+@NgModule({ declarations: [
+        TitleSlugUrlComponent,
+        resizableContainerComponent,
+        codeViewerComponent,
+        accordionContainerComponent,
+        OverviewComponent,
+        ForDesignersComponent,
+        ForDevelopersComponent,
+        UtilitiesComponent,
+        ContactComponent,
+        SlugifyPipe,
+        SafeHtmlPipe,
+        SideNavComponent,
+        ComponentPreviewComponent,
+        InfoTextSmallComponent,
+        ShellComponent,
+        codeViewComponent,
+        BannerDocCodeComponent,
+        InteractiveDemoComponent,
+        ButtonDocCodeComponent,
+        ButtonDocumentationComponent,
+        InputDocumentationComponent,
+        SelectDocumentationComponent,
+        ComponentPreviewComponent,
+        InteractiveDemoComponent,
+        InputDocCodeComponent,
+        SelectDocCodeComponent,
+        EncapsulatedElementComponent,
+        RequestFormComponent,
+        DatePickerDocCodeComponent,
+        DatePickerDocumentationComponent,
+        BannerDocumentationComponent,
+        IconButtonDocumentationComponent,
+        IconButtonDocCodeComponent,
+        AutocompleteDocumentationComponent,
+        emailVerificationComponent,
+        SpinnerDocCodeComponent,
+        SpinnerDocumentationComponent,
+        AutocompleteDocumentationComponent,
+        CheckboxDocCodeComponent,
+        CheckboxDocumentationComponent,
+        ProgressIndicatorDocCodeComponent,
+        ProgressIndicatorDocumentationComponent,
+        AutocompleteDocumentationComponent
+    ],
+    exports: [
+        TitleSlugUrlComponent,
+        codeViewerComponent,
+        accordionContainerComponent,
+        resizableContainerComponent
+    ], imports: [CommonModule,
+        SharedModule,
+        ClipboardModule,
+        QaModule,
+        AccessibilityDemoModule,
+        ShelldModule,
+        HighlightModule,
+        AccessibilityDemoModule,
+        IrccDsAngularNavigationModule,
+        TranslateModule,
+        SharedModule,
+        FormsModule,
+        ReactiveFormsModule], providers: [
+        SideNavConfig,
+        {
+            provide: HIGHLIGHT_OPTIONS,
+            useValue: {
+                fullLibraryLoader: () => import('highlight.js'),
+                themePath: 'assets/code-viewer.css'
+            }
+        },
+        provideHttpClient(withInterceptorsFromDi())
+    ] })
 export class DsPageModule {}
