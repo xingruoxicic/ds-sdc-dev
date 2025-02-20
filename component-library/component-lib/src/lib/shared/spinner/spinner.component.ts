@@ -22,8 +22,9 @@ export interface ISpinnerConfig {
   description?: string;
 }
 @Component({
-  selector: 'ircc-cl-lib-spinner',
-  templateUrl: './spinner.component.html'
+    selector: 'ircc-cl-lib-spinner',
+    templateUrl: './spinner.component.html',
+    standalone: false
 })
 export class SpinnerComponent implements OnInit {
   text: string[] = [];

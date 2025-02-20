@@ -14,9 +14,10 @@ import {
 } from 'ircc-ds-angular-component-library';
 
 @Component({
-  selector: 'app-icon-button-documentation',
-  templateUrl: './icon-button-documentation.component.html',
-  styleUrls: ['./icon-button-documentation.component.scss']
+    selector: 'app-icon-button-documentation',
+    templateUrl: './icon-button-documentation.component.html',
+    styleUrls: ['./icon-button-documentation.component.scss'],
+    standalone: false
 })
 export class IconButtonDocumentationComponent implements OnInit {
   headingConfig = docPageheadingConfig;

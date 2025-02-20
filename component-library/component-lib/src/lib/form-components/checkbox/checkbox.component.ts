@@ -37,15 +37,16 @@ export interface ICheckBoxComponentConfig {
 }
 
 @Component({
-  selector: 'ircc-cl-lib-checkbox',
-  templateUrl: './checkbox.component.html',
-  providers: [
-    {
-      provide: NG_VALUE_ACCESSOR,
-      useExisting: forwardRef(() => CheckboxComponent),
-      multi: true
-    }
-  ]
+    selector: 'ircc-cl-lib-checkbox',
+    templateUrl: './checkbox.component.html',
+    providers: [
+        {
+            provide: NG_VALUE_ACCESSOR,
+            useExisting: forwardRef(() => CheckboxComponent),
+            multi: true
+        }
+    ],
+    standalone: false
 })
 export class CheckboxComponent
   implements ControlValueAccessor, OnInit, OnChanges

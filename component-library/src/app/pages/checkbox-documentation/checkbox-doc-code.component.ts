@@ -18,9 +18,10 @@ const enum CheckboxTypes {
 }
 
 @Component({
-  selector: 'app-checkbox-doc-code',
-  templateUrl: './checkbox-doc-code.component.html',
-  styleUrls: ['./checkbox-doc-code.component.scss']
+    selector: 'app-checkbox-doc-code',
+    templateUrl: './checkbox-doc-code.component.html',
+    styleUrls: ['./checkbox-doc-code.component.scss'],
+    standalone: false
 })
 export class CheckboxDocCodeComponent implements OnInit {
   altLangLink = 'checkbox';

@@ -13,9 +13,10 @@ import {
 } from 'ircc-ds-angular-component-library';
 
 @Component({
-  selector: 'app-spinner-documentation',
-  templateUrl: './spinner-documentation.component.html',
-  styleUrls: ['./spinner-documentation.component.scss']
+    selector: 'app-spinner-documentation',
+    templateUrl: './spinner-documentation.component.html',
+    styleUrls: ['./spinner-documentation.component.scss'],
+    standalone: false
 })
 export class SpinnerDocumentationComponent implements OnInit {
   currentLanguage: string = '';

@@ -27,9 +27,10 @@ export enum LayoutType {
 }
 
 @Component({
-  selector: 'app-button-doc-code',
-  templateUrl: './button-doc-code.component.html',
-  styleUrls: ['./button-documentation.component.scss']
+    selector: 'app-button-doc-code',
+    templateUrl: './button-doc-code.component.html',
+    styleUrls: ['./button-documentation.component.scss'],
+    standalone: false
 })
 export class ButtonDocCodeComponent implements OnInit, TranslatedPageComponent {
   altLangLink = 'buttons';

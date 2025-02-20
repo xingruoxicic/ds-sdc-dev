@@ -8,9 +8,10 @@ import { LanguageSwitchService } from '../../@shared/language-switch/language-sw
 import { LangSwitchService } from '@app/share/lan-switch/lang-switch.service';
 
 @Component({
-  selector: 'app-accessibility-demo-next-page',
-  templateUrl: './accessibility-demo-next-page.component.html',
-  styleUrls: ['./accessibility-demo-next-page.component.scss']
+    selector: 'app-accessibility-demo-next-page',
+    templateUrl: './accessibility-demo-next-page.component.html',
+    styleUrls: ['./accessibility-demo-next-page.component.scss'],
+    standalone: false
 })
 export class AccessibilityDemoNextPageComponent implements OnInit, OnDestroy {
   routerSub?: Subscription;

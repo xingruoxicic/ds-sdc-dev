@@ -7,8 +7,9 @@ import { Subscription, filter } from 'rxjs';
 import { NavigationService } from '../navigation.service';
 
 @Component({
-  selector: 'ircc-cl-lib-nav-accordion',
-  templateUrl: './nav-item-accordion.component.html'
+    selector: 'ircc-cl-lib-nav-accordion',
+    templateUrl: './nav-item-accordion.component.html',
+    standalone: false
 })
 export class navItemAccordionComponent implements OnInit {
   @Input() config: INavigationItemAccordion = {

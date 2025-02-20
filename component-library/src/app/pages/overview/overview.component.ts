@@ -7,10 +7,11 @@ import { TranslatedPageComponent } from '../translated-page-component';
 import { slugTitleURLConfig } from '@app/components/title-slug-url/title-slug-url.component';
 
 @Component({
-  selector: 'app-overview',
-  templateUrl: './overview.component.html',
-  styleUrls: ['./overview.component.scss'],
-  providers: [SlugifyPipe]
+    selector: 'app-overview',
+    templateUrl: './overview.component.html',
+    styleUrls: ['./overview.component.scss'],
+    providers: [SlugifyPipe],
+    standalone: false
 })
 export class OverviewComponent implements OnInit, TranslatedPageComponent {
   currentLanguage: string = '';

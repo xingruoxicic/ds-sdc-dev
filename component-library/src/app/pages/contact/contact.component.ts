@@ -4,8 +4,9 @@ import { LangSwitchService } from '../../share/lan-switch/lang-switch.service';
 import { slugTitleURLConfig } from '@app/components/title-slug-url/title-slug-url.component';
 
 @Component({
-  selector: 'app-contact',
-  templateUrl: './contact.component.html'
+    selector: 'app-contact',
+    templateUrl: './contact.component.html',
+    standalone: false
 })
 export class ContactComponent implements OnInit, TranslatedPageComponent {
   contactSubTitleSlug: slugTitleURLConfig = {

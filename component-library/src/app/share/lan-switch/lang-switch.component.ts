@@ -9,9 +9,10 @@ import { LangSwitchService } from './lang-switch.service';
 import { DisplayLanguages, Languages } from '../global-params';
 
 @Component({
-  selector: 'app-lan-switch',
-  templateUrl: './lang-switch.component.html',
-  styleUrls: ['./lang-switch.component.scss']
+    selector: 'app-lan-switch',
+    templateUrl: './lang-switch.component.html',
+    styleUrls: ['./lang-switch.component.scss'],
+    standalone: false
 })
 export class LangSwitchComponent implements OnInit {
   /** String for storing the URL of the page with the alternative language set */

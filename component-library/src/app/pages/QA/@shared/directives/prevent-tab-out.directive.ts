@@ -13,7 +13,8 @@ export enum TabShiftTab {
 }
 
 @Directive({
-  selector: '[appPreventTabOut]'
+    selector: '[appPreventTabOut]',
+    standalone: false
 })
 export class PreventTabOutDirective {
   @Input() enabled?: string[] = [];

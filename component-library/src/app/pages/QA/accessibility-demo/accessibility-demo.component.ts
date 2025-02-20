@@ -82,9 +82,10 @@ export const CITIES_OF_BIRTH_LOVS_ALL: ICityOfBirth[] = [
 ];
 
 @Component({
-  selector: 'app-accessibility-demo',
-  templateUrl: './accessibility-demo.component.html',
-  styleUrls: ['./accessibility-demo.component.scss']
+    selector: 'app-accessibility-demo',
+    templateUrl: './accessibility-demo.component.html',
+    styleUrls: ['./accessibility-demo.component.scss'],
+    standalone: false
 })
 export class AccessibilityDemoComponent implements OnInit, OnDestroy {
   altPathKey = '';

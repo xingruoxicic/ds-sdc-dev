@@ -23,8 +23,9 @@ export interface IIconButtonComponentConfig {
 export const CLASS_X_MARK = 'fa-light fa-xmark';
 export const CLASS_TRASHCAN = 'fa-light fa-trash-can';
 @Component({
-  selector: 'ircc-cl-lib-icon-button',
-  templateUrl: './icon-button.component.html'
+    selector: 'ircc-cl-lib-icon-button',
+    templateUrl: './icon-button.component.html',
+    standalone: false
 })
 export class IconButtonComponent implements OnInit {
   @Input() config: IIconButtonComponentConfig = {

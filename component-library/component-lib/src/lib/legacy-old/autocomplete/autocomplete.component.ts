@@ -28,8 +28,9 @@ interface IOption {
 }
 
 @Component({
-  selector: 'lib-autocomplete',
-  templateUrl: './autocomplete.component.html'
+    selector: 'lib-autocomplete',
+    templateUrl: './autocomplete.component.html',
+    standalone: false
 })
 export class AutocompleteComponent implements OnInit, DoCheck {
   @ViewChild(InputComponent, { static: true })

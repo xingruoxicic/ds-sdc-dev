@@ -23,8 +23,9 @@ export enum Orientations {
   vertical = 'vertical'
 }
 @Component({
-  selector: 'ircc-cl-lib-progress-indicator',
-  templateUrl: './progress-indicator.component.html'
+    selector: 'ircc-cl-lib-progress-indicator',
+    templateUrl: './progress-indicator.component.html',
+    standalone: false
 })
 export class ProgressIndicatorComponent implements OnInit {
   @Input() config: IProgressIndicatorConfig = {

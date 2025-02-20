@@ -60,8 +60,9 @@ export interface IIndicatorConfig {
 }
 
 @Component({
-  selector: 'ircc-cl-lib-indicator',
-  templateUrl: './indicator.component.html'
+    selector: 'ircc-cl-lib-indicator',
+    templateUrl: './indicator.component.html',
+    standalone: false
 })
 export class IndicatorComponent implements OnInit, AfterViewInit, OnChanges {
   @Input() config: IIndicatorConfig = {

@@ -1,7 +1,10 @@
 import { Pipe, PipeTransform, SecurityContext } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 
-@Pipe({ name: 'autocomplete' })
+@Pipe({
+    name: 'autocomplete',
+    standalone: false
+})
 export class autocompletePipe implements PipeTransform {
   constructor(private domSanitizer: DomSanitizer) {}
 

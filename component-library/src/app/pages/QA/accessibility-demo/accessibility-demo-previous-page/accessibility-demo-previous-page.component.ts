@@ -11,9 +11,10 @@ import { LanguageSwitchService } from '../../@shared/language-switch/language-sw
 import { LangSwitchService } from '@app/share/lan-switch/lang-switch.service';
 
 @Component({
-  selector: 'app-accessibility-demo-previous-page',
-  templateUrl: './accessibility-demo-previous-page.component.html',
-  styleUrls: ['./accessibility-demo-previous-page.component.scss']
+    selector: 'app-accessibility-demo-previous-page',
+    templateUrl: './accessibility-demo-previous-page.component.html',
+    styleUrls: ['./accessibility-demo-previous-page.component.scss'],
+    standalone: false
 })
 export class AccessibilityDemoPreviousPageComponent
   implements OnInit, OnDestroy

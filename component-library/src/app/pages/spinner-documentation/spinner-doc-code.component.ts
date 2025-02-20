@@ -19,10 +19,11 @@ import { LangSwitchService } from '../../share/lan-switch/lang-switch.service';
 import { TranslatedPageComponent } from '../translated-page-component';
 
 @Component({
-  selector: 'app-spinner-doc-code',
-  templateUrl: './spinner-doc-code.component.html',
-  styleUrls: ['./spinner-doc-code.component.scss'],
-  providers: [SlugifyPipe]
+    selector: 'app-spinner-doc-code',
+    templateUrl: './spinner-doc-code.component.html',
+    styleUrls: ['./spinner-doc-code.component.scss'],
+    providers: [SlugifyPipe],
+    standalone: false
 })
 export class SpinnerDocCodeComponent
   implements OnInit, TranslatedPageComponent

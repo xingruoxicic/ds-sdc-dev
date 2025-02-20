@@ -9,8 +9,9 @@ export const GOV_LOGO_ALT_TEXT_EN = 'Canada wordmark';
 export const GOV_LOGO_ALT_TEXT_FR = 'FR Canada wordmark';
 
 @Component({
-  selector: 'ircc-cl-lib-footer',
-  templateUrl: './footer.component.html'
+    selector: 'ircc-cl-lib-footer',
+    templateUrl: './footer.component.html',
+    standalone: false
 })
 export class FooterComponent {
   @Input() id = '';

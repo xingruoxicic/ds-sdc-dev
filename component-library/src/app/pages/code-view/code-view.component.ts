@@ -6,10 +6,11 @@ import { TranslatedPageComponent } from '../translated-page-component';
 import { ICodeViewerConfig } from '@app/components/code-viewer/code-viewer.component';
 
 @Component({
-  selector: 'app-code-view',
-  templateUrl: './code-view.component.html',
-  styleUrls: ['./code-view.component.scss'],
-  providers: [SlugifyPipe]
+    selector: 'app-code-view',
+    templateUrl: './code-view.component.html',
+    styleUrls: ['./code-view.component.scss'],
+    providers: [SlugifyPipe],
+    standalone: false
 })
 export class codeViewComponent implements OnInit, TranslatedPageComponent {
   currentLanguage: string = '';

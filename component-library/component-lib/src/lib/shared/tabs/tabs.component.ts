@@ -15,8 +15,9 @@ export interface ITabConfig {
   value?: string;
 }
 @Component({
-  selector: 'ircc-cl-lib-tabs',
-  templateUrl: './tabs.component.html'
+    selector: 'ircc-cl-lib-tabs',
+    templateUrl: './tabs.component.html',
+    standalone: false
 })
 export class TabsComponent implements OnInit {
   @Input() config: ITabNavConfig = {

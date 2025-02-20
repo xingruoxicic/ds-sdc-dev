@@ -19,8 +19,9 @@ import { NavigationService } from '../navigation.service';
 import { Subscription, filter } from 'rxjs';
 
 @Component({
-  selector: 'ircc-cl-lib-nav-item',
-  templateUrl: './nav-item-nav.component.html'
+    selector: 'ircc-cl-lib-nav-item',
+    templateUrl: './nav-item-nav.component.html',
+    standalone: false
 })
 
 //TODO: Fix class name (NavItemNavComponent)

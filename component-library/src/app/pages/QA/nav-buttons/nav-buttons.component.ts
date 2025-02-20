@@ -24,9 +24,10 @@ export interface INavButtonComponentConfig {
 }
 
 @Component({
-  selector: 'app-nav-buttons',
-  templateUrl: './nav-buttons.component.html',
-  styleUrls: ['./nav-buttons.component.scss']
+    selector: 'app-nav-buttons',
+    templateUrl: './nav-buttons.component.html',
+    styleUrls: ['./nav-buttons.component.scss'],
+    standalone: false
 })
 export class NavButtonsComponent implements OnInit {
   @Input() config?: INavButtonComponentConfig;

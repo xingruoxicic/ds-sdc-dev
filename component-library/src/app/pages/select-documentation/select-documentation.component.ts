@@ -17,10 +17,11 @@ import { docPageheadingConfig } from '@app/share/documentation-page-headings';
 import { ContentItem } from '@app/share/interface/content-item.interface';
 
 @Component({
-  selector: 'app-select-documentation',
-  templateUrl: './select-documentation.component.html',
-  styleUrls: ['./select-documentation.component.scss'],
-  providers: [SlugifyPipe]
+    selector: 'app-select-documentation',
+    templateUrl: './select-documentation.component.html',
+    styleUrls: ['./select-documentation.component.scss'],
+    providers: [SlugifyPipe],
+    standalone: false
 })
 export class SelectDocumentationComponent implements OnInit {
   rightNavData: string[] = [

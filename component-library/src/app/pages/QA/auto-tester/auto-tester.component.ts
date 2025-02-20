@@ -19,9 +19,10 @@ export interface IAutoTestConfigObject {
 }
 
 @Component({
-  selector: 'app-auto-tester',
-  templateUrl: './auto-tester.component.html',
-  styleUrls: ['./auto-tester.component.scss']
+    selector: 'app-auto-tester',
+    templateUrl: './auto-tester.component.html',
+    styleUrls: ['./auto-tester.component.scss'],
+    standalone: false
 })
 export class AutoTesterComponent implements OnInit {
   @Input() config: IAutoTestComponentConfig = {

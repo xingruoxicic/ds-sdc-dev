@@ -1,8 +1,9 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'lib-chip-list',
-  templateUrl: './chip-list.component.html'
+    selector: 'lib-chip-list',
+    templateUrl: './chip-list.component.html',
+    standalone: false
 })
 export class ChipListComponent implements OnInit {
   @Input() chipList?: string[];

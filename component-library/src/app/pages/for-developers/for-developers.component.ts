@@ -6,10 +6,11 @@ import { TranslatedPageComponent } from '../translated-page-component';
 import { Clipboard } from '@angular/cdk/clipboard';
 import { slugTitleURLConfig } from '@app/components/title-slug-url/title-slug-url.component';
 @Component({
-  selector: 'app-for-developers',
-  templateUrl: './for-developers.component.html',
-  styleUrls: ['./for-developers.component.scss'],
-  providers: [SlugifyPipe]
+    selector: 'app-for-developers',
+    templateUrl: './for-developers.component.html',
+    styleUrls: ['./for-developers.component.scss'],
+    providers: [SlugifyPipe],
+    standalone: false
 })
 export class ForDevelopersComponent implements OnInit, TranslatedPageComponent {
   rightNavData: string[] = [

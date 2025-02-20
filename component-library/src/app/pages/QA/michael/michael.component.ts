@@ -17,9 +17,10 @@ import {
 // '@app/gallery/QA/auto-tester/auto-tester.component';
 
 @Component({
-  selector: 'app-michael',
-  templateUrl: './michael.component.html',
-  styleUrls: ['./michael.component.scss']
+    selector: 'app-michael',
+    templateUrl: './michael.component.html',
+    styleUrls: ['./michael.component.scss'],
+    standalone: false
 })
 export class MichaelComponent implements OnInit {
   activeSection: string = '';

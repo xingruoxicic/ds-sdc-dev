@@ -22,10 +22,11 @@ import {
 import { TranslatedPageComponent } from '../translated-page-component';
 
 @Component({
-  selector: 'app-progress-indicator-doc-code',
-  templateUrl: './progress-indicator-doc-code.component.html',
-  styleUrls: ['./progress-indicator-doc-code.component.scss'],
-  providers: [SlugifyPipe]
+    selector: 'app-progress-indicator-doc-code',
+    templateUrl: './progress-indicator-doc-code.component.html',
+    styleUrls: ['./progress-indicator-doc-code.component.scss'],
+    providers: [SlugifyPipe],
+    standalone: false
 })
 export class ProgressIndicatorDocCodeComponent
   implements OnInit, TranslatedPageComponent

@@ -16,9 +16,10 @@ export enum InputFieldType {
 }
 
 @Component({
-  selector: 'app-bobby',
-  templateUrl: './bobby.component.html',
-  styleUrls: ['./bobby.component.scss']
+    selector: 'app-bobby',
+    templateUrl: './bobby.component.html',
+    styleUrls: ['./bobby.component.scss'],
+    standalone: false
 })
 export class BobbyComponent implements OnInit {
   showInputComponent: boolean = false;

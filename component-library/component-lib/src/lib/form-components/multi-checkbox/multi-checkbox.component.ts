@@ -28,9 +28,10 @@ export interface IMultiCheckboxConfig {
 }
 
 @Component({
-  selector: 'ircc-cl-lib-multi-checkbox',
-  templateUrl: './multi-checkbox.component.html',
-  styleUrls: ['./multi-checkbox.component.css']
+    selector: 'ircc-cl-lib-multi-checkbox',
+    templateUrl: './multi-checkbox.component.html',
+    styleUrls: ['./multi-checkbox.component.css'],
+    standalone: false
 })
 export class MultiCheckboxComponent implements OnInit {
   form: FormGroup = new FormGroup({});

@@ -3,8 +3,9 @@ import { Component, Renderer2 } from '@angular/core';
 
 
 @Component({
-  selector: 'ircc-cl-lib-theme-switch',
-  templateUrl: './theme-switch.component.html'
+    selector: 'ircc-cl-lib-theme-switch',
+    templateUrl: './theme-switch.component.html',
+    standalone: false
 })
 export class ThemeSwitchComponent {
   isDarkTheme = false;

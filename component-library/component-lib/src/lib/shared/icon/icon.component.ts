@@ -16,8 +16,9 @@ export interface IIconConfig {
 }
 
 @Component({
-  selector: 'ircc-cl-lib-icon',
-  templateUrl: './icon.component.html'
+    selector: 'ircc-cl-lib-icon',
+    templateUrl: './icon.component.html',
+    standalone: false
 })
 export class IconComponent implements OnChanges, OnInit {
   @ViewChild('iconSpan') iconSpan!: ElementRef;

@@ -7,10 +7,11 @@ import { TranslatedPageComponent } from '../translated-page-component';
 import { NavigationService } from 'ircc-ds-angular-component-library';
 
 @Component({
-  selector: 'app-for-designers',
-  templateUrl: './for-designers.component.html',
-  styleUrls: ['./for-designers.component.scss'],
-  providers: [SlugifyPipe]
+    selector: 'app-for-designers',
+    templateUrl: './for-designers.component.html',
+    styleUrls: ['./for-designers.component.scss'],
+    providers: [SlugifyPipe],
+    standalone: false
 })
 export class ForDesignersComponent implements OnInit, TranslatedPageComponent {
   rightNavData: string[] = [

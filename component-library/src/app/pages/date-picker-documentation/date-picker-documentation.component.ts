@@ -13,9 +13,10 @@ import {
 } from 'ircc-ds-angular-component-library';
 
 @Component({
-  selector: 'app-date-picker-documentation',
-  templateUrl: './date-picker-documentation.component.html',
-  styleUrls: ['./date-picker-documentation.component.scss']
+    selector: 'app-date-picker-documentation',
+    templateUrl: './date-picker-documentation.component.html',
+    styleUrls: ['./date-picker-documentation.component.scss'],
+    standalone: false
 })
 export class DatePickerDocumentationComponent implements OnInit {
   currentLanguage: string = '';

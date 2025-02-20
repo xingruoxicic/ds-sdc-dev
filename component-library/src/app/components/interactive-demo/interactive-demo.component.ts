@@ -19,9 +19,10 @@ export enum InteractiveComponentType {
 }
 
 @Component({
-  selector: 'app-interactive-demo',
-  templateUrl: './interactive-demo.component.html',
-  styleUrls: ['./interactive-demo.component.scss']
+    selector: 'app-interactive-demo',
+    templateUrl: './interactive-demo.component.html',
+    styleUrls: ['./interactive-demo.component.scss'],
+    standalone: false
 })
 export class InteractiveDemoComponent implements OnInit {
   iconConfig: IIconButtonIconConfig = {

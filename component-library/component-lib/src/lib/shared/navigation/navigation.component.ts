@@ -15,8 +15,9 @@ import { Subscription } from 'rxjs';
 import { NavigationService } from './navigation.service';
 
 @Component({
-  selector: 'ircc-cl-lib-navigation',
-  templateUrl: './navigation.component.html'
+    selector: 'ircc-cl-lib-navigation',
+    templateUrl: './navigation.component.html',
+    standalone: false
 })
 export class navigationComponent implements OnInit, AfterViewInit {
   @ViewChild('navigationHeader', { static: false }) navigationHeader:

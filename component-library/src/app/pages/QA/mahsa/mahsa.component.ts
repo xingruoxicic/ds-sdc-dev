@@ -13,9 +13,10 @@ import {
   IAutoTestConfigObject
 } from '../auto-tester/auto-tester.component';
 @Component({
-  selector: 'app-mahsa',
-  templateUrl: './mahsa.component.html',
-  styleUrls: ['./mahsa.component.scss']
+    selector: 'app-mahsa',
+    templateUrl: './mahsa.component.html',
+    styleUrls: ['./mahsa.component.scss'],
+    standalone: false
 })
 export class MahsaComponent implements OnInit {
   toggleComp(comp: string) {

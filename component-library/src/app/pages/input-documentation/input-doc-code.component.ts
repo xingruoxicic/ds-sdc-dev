@@ -20,9 +20,10 @@ import { TranslateService } from '@app/share/templates/parent-template.module';
  * Interactive input demo & code block
  */
 @Component({
-  selector: 'app-input-doc-code',
-  templateUrl: './input-doc-code.component.html',
-  styleUrls: ['./input-doc-code.component.scss']
+    selector: 'app-input-doc-code',
+    templateUrl: './input-doc-code.component.html',
+    styleUrls: ['./input-doc-code.component.scss'],
+    standalone: false
 })
 export class InputDocCodeComponent implements OnInit, TranslatedPageComponent {
   altLangLink = 'input';

@@ -19,9 +19,10 @@ import { TranslatedPageComponent } from '../translated-page-component';
 const NUMBER_OF_CTA_ALLOWED: number = 3;
 
 @Component({
-  selector: 'app-banner-doc-code',
-  templateUrl: './banner-doc-code.component.html',
-  styleUrls: ['./banner-doc-code.component.scss']
+    selector: 'app-banner-doc-code',
+    templateUrl: './banner-doc-code.component.html',
+    styleUrls: ['./banner-doc-code.component.scss'],
+    standalone: false
 })
 export class BannerDocCodeComponent implements OnInit, TranslatedPageComponent {
   @ViewChild('banner', { static: false }) banner!: ElementRef;

@@ -26,9 +26,10 @@ export interface IAccordionContainerConfig {
 }
 
 @Component({
-  selector: 'app-accordian-container',
-  templateUrl: './accordion-container.component.html',
-  styleUrls: ['./accordion-container.component.scss']
+    selector: 'app-accordian-container',
+    templateUrl: './accordion-container.component.html',
+    styleUrls: ['./accordion-container.component.scss'],
+    standalone: false
 })
 export class accordionContainerComponent
   implements OnInit, AfterViewInit, AfterContentChecked

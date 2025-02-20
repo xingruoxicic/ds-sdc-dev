@@ -6,9 +6,10 @@ import {
 } from './nav-buttons/nav-buttons.component';
 
 @Component({
-  selector: 'app-qa',
-  templateUrl: './qa.component.html',
-  styleUrls: ['./qa.component.scss']
+    selector: 'app-qa',
+    templateUrl: './qa.component.html',
+    styleUrls: ['./qa.component.scss'],
+    standalone: false
 })
 export class QaComponent implements OnInit {
   navConfig: INavButtonComponentConfig = {

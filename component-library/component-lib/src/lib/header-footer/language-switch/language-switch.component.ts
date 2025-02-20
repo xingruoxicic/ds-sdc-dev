@@ -19,8 +19,9 @@ export const LANGUAGE_SWITCH_TEXT_FRENCH = 'English';
 export const LANGUAGE_SWITCH_TEXT_FRENCH_MOBILE = '<abbr title="English">EN</abbr>';
 
 @Component({
-  selector: 'ircc-cl-lib-language-switch',
-  templateUrl: './language-switch.component.html'
+    selector: 'ircc-cl-lib-language-switch',
+    templateUrl: './language-switch.component.html',
+    standalone: false
 })
 export class LanguageSwitchComponent implements OnInit {
   @Input() id = '';

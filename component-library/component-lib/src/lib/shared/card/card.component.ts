@@ -11,8 +11,9 @@ export interface ICardConfig {
 }
 
 @Component({
-  selector: 'ircc-cl-lib-card',
-  templateUrl: './card.component.html'
+    selector: 'ircc-cl-lib-card',
+    templateUrl: './card.component.html',
+    standalone: false
 })
 export class CardComponent {
   @Input() id = '';

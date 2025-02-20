@@ -39,8 +39,9 @@ export const FLYOUT_CURRENT_SELECTED = {
 };
 
 @Component({
-  selector: 'ircc-cl-lib-flyout',
-  templateUrl: './flyout.component.html'
+    selector: 'ircc-cl-lib-flyout',
+    templateUrl: './flyout.component.html',
+    standalone: false
 })
 export class FlyoutComponent implements OnInit {
   constructor(private translate: TranslateService) {}

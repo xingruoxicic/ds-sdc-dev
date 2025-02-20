@@ -7,9 +7,10 @@ export enum BackgroundColor {
 }
 
 @Component({
-  selector: 'app-component-preview',
-  templateUrl: './component-preview.component.html',
-  styleUrls: ['./component-preview.component.scss']
+    selector: 'app-component-preview',
+    templateUrl: './component-preview.component.html',
+    styleUrls: ['./component-preview.component.scss'],
+    standalone: false
 })
 export class ComponentPreviewComponent implements OnInit {
   @Input() copyText?: string;

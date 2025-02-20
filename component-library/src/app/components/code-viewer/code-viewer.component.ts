@@ -26,9 +26,10 @@ export interface ICodeViewerConfig {
 }
 
 @Component({
-  selector: 'app-code-viewer',
-  templateUrl: './code-viewer.component.html',
-  styleUrls: ['./code-viewer.component.scss']
+    selector: 'app-code-viewer',
+    templateUrl: './code-viewer.component.html',
+    styleUrls: ['./code-viewer.component.scss'],
+    standalone: false
 })
 export class codeViewerComponent implements OnInit, OnChanges {
   @Input() config: ICodeViewerConfig = {

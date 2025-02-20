@@ -11,9 +11,10 @@ import { DSViewPortSize } from 'ircc-ds-angular-component-library';
 import { ContentItem } from '@app/share/interface/content-item.interface';
 
 @Component({
-  selector: 'app-button-documentation',
-  templateUrl: './button-documentation.component.html',
-  styleUrls: ['./button-documentation.component.scss']
+    selector: 'app-button-documentation',
+    templateUrl: './button-documentation.component.html',
+    styleUrls: ['./button-documentation.component.scss'],
+    standalone: false
 })
 export class ButtonDocumentationComponent implements OnInit {
   altLangLink = 'buttonDocumentation';

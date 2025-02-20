@@ -5,18 +5,18 @@
     "./src/assets"
   ],
   "peerDependencies": {
-    "@angular/cdk": "^18",
-    "@angular/cdk-experimental": "^18",
-    "@angular/common": "^18",
-    "@angular/core": "^18",
+    "@angular/cdk": "^14",
+    "@angular/cdk-experimental": "^14",
+    "@angular/common": "^14",
+    "@angular/core": "^14",
     "@ircc-ca/ds-sdc-core": "file:../../core-library",
-    "@ngx-translate/core": "^18",
-    "@angular/forms": "^18"
+    "@ngx-translate/core": "^14",
+    "@angular/forms": "^14"
   },
   "dependencies": {
     "tslib": "^2.3.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^18"
+    "@angular-devkit/build-angular": "^14"
   }
 }

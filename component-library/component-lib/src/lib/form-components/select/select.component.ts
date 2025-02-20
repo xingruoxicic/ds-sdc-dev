@@ -39,15 +39,16 @@ export interface ISelectOptionsConfig {
 }
 
 @Component({
-  selector: 'ircc-cl-lib-select',
-  templateUrl: './select.component.html',
-  providers: [
-    {
-      provide: NG_VALUE_ACCESSOR,
-      multi: true,
-      useExisting: forwardRef(() => SelectComponent) //This allows the error state to be turned off and on again
-    }
-  ]
+    selector: 'ircc-cl-lib-select',
+    templateUrl: './select.component.html',
+    providers: [
+        {
+            provide: NG_VALUE_ACCESSOR,
+            multi: true,
+            useExisting: forwardRef(() => SelectComponent) //This allows the error state to be turned off and on again
+        }
+    ],
+    standalone: false
 })
 export class SelectComponent implements ControlValueAccessor, OnInit {
   touched = false;

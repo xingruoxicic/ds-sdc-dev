@@ -12,8 +12,9 @@ export interface IHiddenNavConfig {
 }
 
 @Component({
-  selector: 'ircc-cl-lib-hidden-nav',
-  templateUrl: './hidden-nav.component.html'
+    selector: 'ircc-cl-lib-hidden-nav',
+    templateUrl: './hidden-nav.component.html',
+    standalone: false
 })
 export class HiddenNavComponent {
   @Input() config: IHiddenNavConfig = {

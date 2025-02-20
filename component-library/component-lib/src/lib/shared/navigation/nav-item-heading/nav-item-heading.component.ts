@@ -6,8 +6,9 @@ import { NavigationService } from '../navigation.service';
 import { Subscription } from 'rxjs';
 
 @Component({
-  selector: 'ircc-cl-lib-nav-header',
-  templateUrl: './nav-item-heading.component.html'
+    selector: 'ircc-cl-lib-nav-header',
+    templateUrl: './nav-item-heading.component.html',
+    standalone: false
 })
 export class navItemHeadingComponent implements OnInit {
   @Input() config: INavigationItemHeading = {

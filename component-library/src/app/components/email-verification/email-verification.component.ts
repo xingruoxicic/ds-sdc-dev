@@ -27,9 +27,10 @@ export interface IEmailVerificationConfig {
 }
 
 @Component({
-  selector: 'email-verification-container',
-  templateUrl: './email-verification.component.html',
-  styleUrls: ['./email-verification.component.scss']
+    selector: 'email-verification-container',
+    templateUrl: './email-verification.component.html',
+    styleUrls: ['./email-verification.component.scss'],
+    standalone: false
 })
 export class emailVerificationComponent
   implements OnInit, AfterViewInit, AfterContentChecked

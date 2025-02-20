@@ -11,9 +11,10 @@ import {
 import { IIconButtonComponentConfig } from 'ircc-ds-angular-component-library';
 
 @Component({
-  selector: 'app-resizable-container',
-  templateUrl: './resizable-container.component.html',
-  styleUrls: ['./resizable-container.component.scss']
+    selector: 'app-resizable-container',
+    templateUrl: './resizable-container.component.html',
+    styleUrls: ['./resizable-container.component.scss'],
+    standalone: false
 })
 export class resizableContainerComponent implements AfterViewInit {
   @ViewChild('resizeBar', { static: false }) resizeBar: ElementRef | undefined;

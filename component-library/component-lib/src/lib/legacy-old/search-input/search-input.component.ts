@@ -13,8 +13,9 @@ export interface ISearchInputButtonConfig {
 }
 
 @Component({
-  selector: 'lib-search-input',
-  templateUrl: './search-input.component.html'
+    selector: 'lib-search-input',
+    templateUrl: './search-input.component.html',
+    standalone: false
 })
 export class SearchInputComponent implements OnInit {
   @Input() config?: ISearchInputConfig;

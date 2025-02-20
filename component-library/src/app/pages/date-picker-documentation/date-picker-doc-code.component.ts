@@ -22,10 +22,11 @@ import { LangSwitchService } from '../../share/lan-switch/lang-switch.service';
 import { TranslatedPageComponent } from '../translated-page-component';
 
 @Component({
-  selector: 'app-date-picker-doc-code',
-  templateUrl: './date-picker-doc-code.component.html',
-  styleUrls: ['./date-picker-doc-code.component.scss'],
-  providers: [SlugifyPipe]
+    selector: 'app-date-picker-doc-code',
+    templateUrl: './date-picker-doc-code.component.html',
+    styleUrls: ['./date-picker-doc-code.component.scss'],
+    providers: [SlugifyPipe],
+    standalone: false
 })
 export class DatePickerDocCodeComponent
   implements OnInit, TranslatedPageComponent {

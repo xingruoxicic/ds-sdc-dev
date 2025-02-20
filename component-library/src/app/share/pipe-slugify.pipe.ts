@@ -5,7 +5,8 @@ import { Pipe, PipeTransform } from '@angular/core';
  * @see https://www.otcollect.com/collection/angular/page/dkrrYPP2/angular-slugify-pipe-for-your-angular-url-seo-friendly-applications
  */
 @Pipe({
-  name: 'SlugifyPipe'
+    name: 'SlugifyPipe',
+    standalone: false
 })
 export class SlugifyPipe implements PipeTransform {
   transform(str: string): string {

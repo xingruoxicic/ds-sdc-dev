@@ -46,15 +46,16 @@ export interface IRadioInputOption {
 }
 
 @Component({
-  selector: 'ircc-cl-lib-radio-input',
-  templateUrl: './radio-input.component.html',
-  providers: [
-    {
-      provide: NG_VALUE_ACCESSOR,
-      multi: true,
-      useExisting: forwardRef(() => RadioInputComponent) //This allows the error state to be turned off and on again
-    }
-  ]
+    selector: 'ircc-cl-lib-radio-input',
+    templateUrl: './radio-input.component.html',
+    providers: [
+        {
+            provide: NG_VALUE_ACCESSOR,
+            multi: true,
+            useExisting: forwardRef(() => RadioInputComponent) //This allows the error state to be turned off and on again
+        }
+    ],
+    standalone: false
 })
 export class RadioInputComponent
   implements OnInit, OnChanges, ControlValueAccessor

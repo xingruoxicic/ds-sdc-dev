@@ -2,8 +2,9 @@ import { Component, OnInit, Input } from '@angular/core';
 import { INavigationDivider } from '../navigation.types';
 
 @Component({
-  selector: 'ircc-cl-lib-nav-divider',
-  templateUrl: './nav-item-divider.component.html'
+    selector: 'ircc-cl-lib-nav-divider',
+    templateUrl: './nav-item-divider.component.html',
+    standalone: false
 })
 export class navItemDividerComponent implements OnInit {
   @Input() config: INavigationDivider = {

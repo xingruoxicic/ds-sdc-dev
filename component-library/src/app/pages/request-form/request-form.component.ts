@@ -27,10 +27,11 @@ import { ISideNavDataInterface } from '@app/components/side-nav/side-nav.model';
 import { SideNavConfig } from '@app/components/side-nav/side-nav.config';
 
 @Component({
-  selector: 'app-request-form',
-  templateUrl: './request-form.component.html',
-  styleUrls: ['./request-form.component.scss'],
-  providers: [SlugifyPipe]
+    selector: 'app-request-form',
+    templateUrl: './request-form.component.html',
+    styleUrls: ['./request-form.component.scss'],
+    providers: [SlugifyPipe],
+    standalone: false
 })
 export class RequestFormComponent implements OnInit, AfterViewInit {
   rightNavData: string[] = [

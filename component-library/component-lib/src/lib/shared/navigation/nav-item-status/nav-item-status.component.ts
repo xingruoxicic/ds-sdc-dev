@@ -4,8 +4,9 @@ import { Component, OnInit } from '@angular/core';
 import { NavigationStatus } from '../navigation.types';
 
 @Component({
-  selector: 'ircc-cl-lib-nav-item-status',
-  templateUrl: './nav-item-status.component.html'
+    selector: 'ircc-cl-lib-nav-item-status',
+    templateUrl: './nav-item-status.component.html',
+    standalone: false
 })
 export class navItemStatusComponent implements OnInit {
 

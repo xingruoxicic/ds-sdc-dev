@@ -16,11 +16,12 @@ import {
 } from './utilities.constant';
 
 @Component({
-  selector: 'app-utilities',
-  templateUrl: './utilities.component.html',
-  styleUrls: ['./utilities.component.scss'],
-  providers: [SlugifyPipe, SafeHtmlPipe],
-  encapsulation: ViewEncapsulation.None
+    selector: 'app-utilities',
+    templateUrl: './utilities.component.html',
+    styleUrls: ['./utilities.component.scss'],
+    providers: [SlugifyPipe, SafeHtmlPipe],
+    encapsulation: ViewEncapsulation.None,
+    standalone: false
 })
 export class UtilitiesComponent implements OnInit, TranslatedPageComponent {
   rightNavData: string[] = [

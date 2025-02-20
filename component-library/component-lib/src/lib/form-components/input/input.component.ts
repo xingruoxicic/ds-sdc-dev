@@ -69,15 +69,16 @@ export const ARIA_TEXT = {
 };
 
 @Component({
-  selector: 'ircc-cl-lib-input',
-  templateUrl: './input.component.html',
-  providers: [
-    {
-      provide: NG_VALUE_ACCESSOR,
-      useExisting: forwardRef(() => InputComponent),
-      multi: true
-    }
-  ]
+    selector: 'ircc-cl-lib-input',
+    templateUrl: './input.component.html',
+    providers: [
+        {
+            provide: NG_VALUE_ACCESSOR,
+            useExisting: forwardRef(() => InputComponent),
+            multi: true
+        }
+    ],
+    standalone: false
 })
 export class InputComponent
   implements ControlValueAccessor, OnInit, OnChanges, AfterContentChecked

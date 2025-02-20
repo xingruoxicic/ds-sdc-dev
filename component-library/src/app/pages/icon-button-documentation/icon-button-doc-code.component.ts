@@ -19,9 +19,10 @@ import {
 import { TranslatedPageComponent } from '../translated-page-component';
 
 @Component({
-  selector: 'app-icon-button-doc-code',
-  templateUrl: './icon-button-doc-code.component.html',
-  styleUrls: ['./icon-button-doc-code.component.scss']
+    selector: 'app-icon-button-doc-code',
+    templateUrl: './icon-button-doc-code.component.html',
+    styleUrls: ['./icon-button-doc-code.component.scss'],
+    standalone: false
 })
 export class IconButtonDocCodeComponent
   implements OnInit, TranslatedPageComponent

@@ -25,9 +25,10 @@ import {
 } from 'ircc-ds-angular-component-library';
 
 @Component({
-  selector: 'app-shell',
-  templateUrl: './shell.component.html',
-  styleUrls: ['./shell.component.scss']
+    selector: 'app-shell',
+    templateUrl: './shell.component.html',
+    styleUrls: ['./shell.component.scss'],
+    standalone: false
 })
 export class ShellComponent implements OnInit {
   dateModified = environment.dateModified;

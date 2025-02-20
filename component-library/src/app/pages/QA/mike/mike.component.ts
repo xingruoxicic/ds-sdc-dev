@@ -22,9 +22,10 @@ import {
 } from 'ircc-ds-angular-component-library';
 
 @Component({
-  selector: 'app-mike',
-  templateUrl: './mike.component.html',
-  styleUrls: ['./mike.component.scss']
+    selector: 'app-mike',
+    templateUrl: './mike.component.html',
+    styleUrls: ['./mike.component.scss'],
+    standalone: false
 })
 export class MikeComponent implements OnInit {
   toggleComp(comp: string) {

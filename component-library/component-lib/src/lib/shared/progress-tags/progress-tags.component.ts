@@ -30,8 +30,9 @@ export interface IProgressTagsConfig {
   size?: keyof typeof DSSizes;
 }
 @Component({
-  selector: 'ircc-cl-lib-progress-tags',
-  templateUrl: './progress-tags.component.html'
+    selector: 'ircc-cl-lib-progress-tags',
+    templateUrl: './progress-tags.component.html',
+    standalone: false
 })
 export class ProgressTagsComponent implements OnInit {
   text: string[] = [];

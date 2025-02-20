@@ -33,8 +33,9 @@ export interface IBreadcrumbConfig {
 }
 
 @Component({
-  selector: 'ircc-cl-lib-breadcrumb',
-  templateUrl: './breadcrumb.component.html'
+    selector: 'ircc-cl-lib-breadcrumb',
+    templateUrl: './breadcrumb.component.html',
+    standalone: false
 })
 export class BreadcrumbComponent implements OnInit, OnChanges, AfterViewInit {
   @Input() config: IBreadcrumbConfig = {

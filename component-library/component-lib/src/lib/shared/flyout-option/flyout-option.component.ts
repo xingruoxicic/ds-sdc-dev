@@ -21,8 +21,9 @@ export interface IFlyoutOptionConfig {
 };
 
 @Component({
-  selector: 'ircc-cl-lib-flyout-option',
-  templateUrl: './flyout-option.component.html'
+    selector: 'ircc-cl-lib-flyout-option',
+    templateUrl: './flyout-option.component.html',
+    standalone: false
 })
 export class FlyoutOptionComponent implements OnInit {
 

@@ -14,9 +14,10 @@ import { TranslateService } from '@ngx-translate/core';
 import { docPageheadingConfig } from '@app/share/documentation-page-headings';
 
 @Component({
-  selector: 'app-banner-documentation',
-  templateUrl: './banner-documentation.component.html',
-  styleUrls: ['./banner-documentation.component.scss']
+    selector: 'app-banner-documentation',
+    templateUrl: './banner-documentation.component.html',
+    styleUrls: ['./banner-documentation.component.scss'],
+    standalone: false
 })
 export class BannerDocumentationComponent implements OnInit {
   currentLanguage: string = '';

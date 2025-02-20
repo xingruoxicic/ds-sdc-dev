@@ -22,9 +22,10 @@ export enum InputFieldType {
 }
 
 @Component({
-  selector: 'app-naseer',
-  templateUrl: './naseer.component.html',
-  styleUrls: ['./naseer.component.scss']
+    selector: 'app-naseer',
+    templateUrl: './naseer.component.html',
+    styleUrls: ['./naseer.component.scss'],
+    standalone: false
 })
 export class NaseerComponent implements OnInit {
   showInputComponent: boolean = false;

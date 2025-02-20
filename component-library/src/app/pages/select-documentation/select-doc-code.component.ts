@@ -26,9 +26,10 @@ import { TranslateService } from '@app/share/templates/parent-template.module';
  * Interactive input demo & code block
  */
 @Component({
-  selector: 'app-select-doc-code',
-  templateUrl: './select-doc-code.component.html',
-  styleUrls: ['./select-doc-code.component.scss']
+    selector: 'app-select-doc-code',
+    templateUrl: './select-doc-code.component.html',
+    styleUrls: ['./select-doc-code.component.scss'],
+    standalone: false
 })
 export class SelectDocCodeComponent implements OnInit, TranslatedPageComponent {
   altLangLink = 'select';

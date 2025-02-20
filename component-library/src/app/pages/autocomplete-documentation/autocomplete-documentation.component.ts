@@ -20,10 +20,11 @@ import {
 } from '@app/components/code-viewer/code-viewer.component';
 
 @Component({
-  selector: 'app-autocomplete-documentation',
-  templateUrl: './autocomplete-documentation.component.html',
-  styleUrls: ['./autocomplete-documentation.component.scss'],
-  providers: [SlugifyPipe]
+    selector: 'app-autocomplete-documentation',
+    templateUrl: './autocomplete-documentation.component.html',
+    styleUrls: ['./autocomplete-documentation.component.scss'],
+    providers: [SlugifyPipe],
+    standalone: false
 })
 export class AutocompleteDocumentationComponent
   implements OnInit, TranslatedPageComponent

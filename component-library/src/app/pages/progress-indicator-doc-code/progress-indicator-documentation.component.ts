@@ -8,9 +8,10 @@ import { TranslateService } from '@ngx-translate/core';
 import { LangSwitchService } from '@app/share/lan-switch/lang-switch.service';
 
 @Component({
-  selector: 'app-progress-indicator-documentation',
-  templateUrl: './progress-indicator-documentation.component.html',
-  styleUrls: ['./progress-indicator-documentation.component.scss']
+    selector: 'app-progress-indicator-documentation',
+    templateUrl: './progress-indicator-documentation.component.html',
+    styleUrls: ['./progress-indicator-documentation.component.scss'],
+    standalone: false
 })
 export class ProgressIndicatorDocumentationComponent implements OnInit {
   currentLanguage: string = '';

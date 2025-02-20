@@ -18,10 +18,11 @@ export interface slugTitleURLConfig {
 }
 
 @Component({
-  selector: 'app-title-slug-url',
-  templateUrl: './title-slug-url.component.html',
-  styleUrls: ['./title-slug-url.component.scss'],
-  providers: [SlugifyPipe]
+    selector: 'app-title-slug-url',
+    templateUrl: './title-slug-url.component.html',
+    styleUrls: ['./title-slug-url.component.scss'],
+    providers: [SlugifyPipe],
+    standalone: false
 })
 export class TitleSlugUrlComponent implements AfterContentInit, OnInit {
   @Input()

@@ -44,9 +44,10 @@ export enum matchType {
 }
 
 @Component({
-  selector: 'ircc-cl-lib-autocomplete',
-  templateUrl: './autocomplete.component.html',
-  styleUrls: ['./autocomplete.component.css']
+    selector: 'ircc-cl-lib-autocomplete',
+    templateUrl: './autocomplete.component.html',
+    styleUrls: ['./autocomplete.component.css'],
+    standalone: false
 })
 export class AutoCompleteComponent
   implements OnInit, OnChanges, AfterContentChecked

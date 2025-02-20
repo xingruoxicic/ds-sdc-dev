@@ -49,15 +49,16 @@ export enum ResizableTypes {
   none = 'none'
 }
 @Component({
-  selector: 'ircc-cl-lib-textarea',
-  templateUrl: './textarea.component.html',
-  providers: [
-    {
-      provide: NG_VALUE_ACCESSOR,
-      useExisting: forwardRef(() => TextareaComponent),
-      multi: true
-    }
-  ]
+    selector: 'ircc-cl-lib-textarea',
+    templateUrl: './textarea.component.html',
+    providers: [
+        {
+            provide: NG_VALUE_ACCESSOR,
+            useExisting: forwardRef(() => TextareaComponent),
+            multi: true
+        }
+    ],
+    standalone: false
 })
 export class TextareaComponent implements ControlValueAccessor, OnInit {
   formGroupEmpty: FormGroup = new FormGroup({});

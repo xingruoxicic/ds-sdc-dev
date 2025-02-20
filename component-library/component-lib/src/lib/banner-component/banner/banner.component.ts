@@ -56,8 +56,9 @@ export interface IBannerConfig {
 }
 
 @Component({
-  selector: 'ircc-cl-lib-banner',
-  templateUrl: './banner.component.html'
+    selector: 'ircc-cl-lib-banner',
+    templateUrl: './banner.component.html',
+    standalone: false
 })
 export class BannerComponent implements OnInit {
   @ViewChild('banner', { static: false })

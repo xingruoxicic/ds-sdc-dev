@@ -33,22 +33,20 @@ import {
 import { Renderer2 } from '@angular/core';
 
 @Component({
-  selector: 'app-side-nav',
-  templateUrl: './side-nav.component.html',
-  styleUrls: ['./side-nav.component.scss'],
-  animations: [
-    trigger('leftSideNavTrigger', [
-      // To define animations based on trigger actions
-      state('open', style({ opacity: '1' })),
-      state(
-        'close',
-        style({ opacity: '0', height: '0', 'pointer-events': 'none' })
-      ),
-      transition('open => close', [animate('300ms ease-in')]),
-      transition('close => open', [animate('300ms ease-out')])
-    ])
-  ],
-  providers: [SlugifyPipe]
+    selector: 'app-side-nav',
+    templateUrl: './side-nav.component.html',
+    styleUrls: ['./side-nav.component.scss'],
+    animations: [
+        trigger('leftSideNavTrigger', [
+            // To define animations based on trigger actions
+            state('open', style({ opacity: '1' })),
+            state('close', style({ opacity: '0', height: '0', 'pointer-events': 'none' })),
+            transition('open => close', [animate('300ms ease-in')]),
+            transition('close => open', [animate('300ms ease-out')])
+        ])
+    ],
+    providers: [SlugifyPipe],
+    standalone: false
 })
 export class SideNavComponent
   implements OnInit, AfterViewChecked, AfterViewInit

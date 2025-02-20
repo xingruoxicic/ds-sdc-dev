@@ -18,10 +18,11 @@ import { docPageheadingConfig } from '@app/share/documentation-page-headings';
 import { ContentItem } from '@app/share/interface/content-item.interface';
 
 @Component({
-  selector: 'app-input-documentation',
-  templateUrl: './input-documentation.component.html',
-  styleUrls: ['./input-documentation.component.scss'],
-  providers: [SlugifyPipe]
+    selector: 'app-input-documentation',
+    templateUrl: './input-documentation.component.html',
+    styleUrls: ['./input-documentation.component.scss'],
+    providers: [SlugifyPipe],
+    standalone: false
 })
 export class InputDocumentationComponent implements OnInit {
   currentLanguage: string = '';

@@ -20,8 +20,9 @@ export const DROPDOWN_ARIA = {
   fr: 'Menu Deroulant'
 };
 @Component({
-  selector: 'ircc-cl-lib-dropdown',
-  templateUrl: './drop-down.component.html'
+    selector: 'ircc-cl-lib-dropdown',
+    templateUrl: './drop-down.component.html',
+    standalone: false
 })
 export class DropdownComponent implements OnInit {
   constructor(private translate: TranslateService) {}

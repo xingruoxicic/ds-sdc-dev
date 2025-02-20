@@ -36,8 +36,9 @@ export const HELP_ICON_ALT = {
 };
 
 @Component({
-  selector: 'ircc-cl-lib-label',
-  templateUrl: './label.component.html'
+    selector: 'ircc-cl-lib-label',
+    templateUrl: './label.component.html',
+    standalone: false
 })
 export class LabelComponent implements OnInit {
   @Input() config: ILabelConfig = {
