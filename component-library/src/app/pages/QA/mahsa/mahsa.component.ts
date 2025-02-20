@@ -250,7 +250,7 @@ export class MahsaComponent implements OnInit {
     testFields: this.spinnerTestConfigObj
   };
 
-  constructor(private lang: LangSwitchService) {}
+  constructor(private lang: LangSwitchService) { }
 
   ngOnInit() {
     this.lang.setAltLangLink('mahsa');
@@ -281,7 +281,7 @@ export class MahsaComponent implements OnInit {
       this.spinnerForm.addControl(i.id, new FormControl());
     });
 
-    this.form.valueChanges.subscribe((value) => {
+    this.form.valueChanges.subscribe((value: { [key: string]: any }) => {
       let updatedConfig: ISelectConfig = {
         id: this.SELECT_ID,
         formGroup: this.form,
@@ -299,7 +299,7 @@ export class MahsaComponent implements OnInit {
       });
     });
 
-    this.tagForm.valueChanges.subscribe((value) => {
+    this.tagForm.valueChanges.subscribe((value: { [key: string]: any }) => {
       Object.keys(value).forEach((param) => {
         if (value[param]) {
           this.qaTags = { ...this.qaTags, [param]: value[param] };
@@ -307,7 +307,7 @@ export class MahsaComponent implements OnInit {
       });
     });
 
-    this.spinnerForm.valueChanges.subscribe((value) => {
+    this.spinnerForm.valueChanges.subscribe((value: { [key: string]: any }) => {
       Object.keys(value).forEach((param) => {
         if (
           (value['size'] === 'small' || value['size'] === 'extraSmall') &&

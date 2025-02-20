@@ -28,8 +28,7 @@ import { TranslatedPageComponent } from '../translated-page-component';
   providers: [SlugifyPipe]
 })
 export class DatePickerDocCodeComponent
-  implements OnInit, TranslatedPageComponent
-{
+  implements OnInit, TranslatedPageComponent {
   currentLanguage: string = '';
   altLangLink = 'datePicker';
   formDatePicker = new FormGroup({});
@@ -481,20 +480,22 @@ export class DatePickerDocCodeComponent
     this.parseCodeViewConfig();
   }
 
-  /**
-   * Toggle disabled state of input
-   */
+  /** Toggle disabled state of input */
   private toggleDisabled(disabled: boolean) {
-    const datePickerYearControl =
-      this.formDatePicker.controls['datePicker_yearControl'];
-    const datePickerMonthControl =
-      this.formDatePicker.controls['datePicker_monthControl'];
-    const datePickerDayControl =
-      this.formDatePicker.controls['datePicker_dayControl'];
+    const datePickerYearControl: AbstractControl = this.formDatePicker.get(
+      'datePicker_yearControl'
+    )!;
+    const datePickerMonthControl: AbstractControl = this.formDatePicker.get(
+      'datePicker_monthControl'
+    )!;
+    const datePickerDayControl: AbstractControl = this.formDatePicker.get(
+      'datePicker_dayControl'
+    )!;
 
     const datePickerControl: AbstractControl | null = this.formDatePicker.get(
       this.datePickerConfig.id
     );
+
     if (
       (disabled && datePickerControl?.disabled) ||
       (!disabled && datePickerControl?.enabled)

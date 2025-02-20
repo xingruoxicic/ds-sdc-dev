@@ -17,7 +17,7 @@ export interface IErrorIDs {
   providedIn: 'root'
 })
 export class StandAloneFunctions {
-  constructor(private translate: TranslateService) {}
+  constructor(private translate: TranslateService) { }
 
   getErrorAria(formGroup: FormGroup, id: string, errorMessages: IErrorPairs[]) {
     let returnError = '';
@@ -77,12 +77,14 @@ export class StandAloneFunctions {
    * @param errorKeys
    */
   setFormErrors(formGroup: FormGroup, formID: string, errorKeys: string[]) {
-    const errorVals = {};
+    // Define errorVals with an index signature
+    const errorVals: { [key: string]: boolean } = {};
+
     if (errorKeys.length === 0) {
       formGroup.get(formID)?.setErrors(null);
     } else {
       errorKeys.forEach((error) => {
-        errorVals[error] = true;
+        errorVals[error] = true; // This will now work without TypeScript errors
       });
       formGroup.get(formID)?.setErrors(errorVals);
       formGroup.get(formID)?.markAsTouched();

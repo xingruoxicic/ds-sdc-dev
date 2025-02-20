@@ -121,10 +121,14 @@ export class IndicatorComponent implements OnInit, AfterViewInit, OnChanges {
   private checkNumber() {
     if (
       this.config.type === 'number' &&
-      this.config?.label &&
-      this.config.label > 99
+      this.config?.label !== undefined // Ensure label is defined
     ) {
-      this.config.label = '99+';
+      const labelValue = this.config.label;
+
+      // Check if labelValue is a number
+      if (typeof labelValue === 'number' && labelValue > 99) {
+        this.config.label = '99+';
+      }
     }
   }
 

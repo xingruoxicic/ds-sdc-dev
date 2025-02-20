@@ -35,7 +35,7 @@ export class CheckboxDocCodeComponent implements OnInit {
   constructor(
     private lang: LangSwitchService,
     private translate: TranslateService
-  ) {}
+  ) { }
 
   singleCheckboxConfig: ICheckBoxComponentConfig = {
     id: 'single_checkbox',
@@ -1061,7 +1061,7 @@ export class CheckboxDocCodeComponent implements OnInit {
     errorKeys: string[],
     checkbox_type: CheckboxTypes
   ) {
-    const errorVals = {};
+    const errorVals: { [key: string]: boolean } = {}; // Updated type definition
     if (errorKeys.length === 0) {
       this.clearErrors(formGroup, formID, checkbox_type);
     } else {

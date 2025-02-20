@@ -124,15 +124,30 @@ export class NavigationService {
     return returnItem;
   };
 
+
+
   /**
    * Replace the contents of one object with those of another. This is done to keep our
    * memory trick going
    * @param obj1 object being updated
    * @param obj2 values to put in obj1
    */
-  private setNavItemFields = (obj1: INavigationItem, obj2: INavigationItem) => {
-    Object.keys(obj2).forEach((key) => {
-      obj1[key] = obj2[key];
-    });
-  };
+  // private setNavItemFields = (obj1: INavigationItem, obj2: INavigationItem) => {
+  //   (Object.keys(obj2) as (keyof INavigationItem)[]).forEach((key) => {
+  //     if (obj1[key] && obj2[key]) {
+  //       // Assert that the type of obj2[key] matches the type of obj1[key]
+  //       obj1[key] = obj2[key] as typeof obj1[typeof key];
+  //     }
+  //   });
+  // };
+  private setNavItemFields(obj1: INavigationItem, obj2: INavigationItem): void {
+    // Copy each property explicitly.
+    obj1.id = obj2.id;
+    obj1.label = obj2.label;
+    obj1.type = obj2.type;
+    obj1.size = obj2.size;
+    obj1.children = obj2.children;
+    obj1.indicator = obj2.indicator;
+    obj1.border = obj2.border;
+  }
 }

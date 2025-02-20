@@ -287,7 +287,7 @@ export class NaseerComponent implements OnInit {
     testFields: this.testerConfigTextarea
   };
 
-  constructor(private lang: LangSwitchService) {}
+  constructor(private lang: LangSwitchService) { }
 
   ngOnInit() {
     this.lang.setAltLangLink('naseer');
@@ -307,7 +307,7 @@ export class NaseerComponent implements OnInit {
     });
 
     this.form_input.addControl(this.qaInput.id, new FormControl());
-    this.form_input.valueChanges.subscribe((x) => {
+    this.form_input.valueChanges.subscribe((x: { [key: string]: string }) => {
       let updatedConfig: IInputComponentConfig = {
         id: this.INPUT_ID,
         formGroup: this.form_input
@@ -334,7 +334,7 @@ export class NaseerComponent implements OnInit {
     });
 
     this.form_textarea.addControl(this.qaTextareaInput.id, new FormControl());
-    this.form_textarea.valueChanges.subscribe((x) => {
+    this.form_textarea.valueChanges.subscribe((x: { [key: string]: any }) => {
       let updatedConfig: IInputComponentConfig = {
         id: this.INPUT_ID,
         formGroup: this.form_textarea,
@@ -404,8 +404,8 @@ export class NaseerComponent implements OnInit {
       case 'inputError':
         this.form_textarea.get(this.qaTextareaInput.id)?.valid
           ? this.form_textarea
-              .get(this.qaTextareaInput.id)
-              ?.setErrors({ invalid: true })
+            .get(this.qaTextareaInput.id)
+            ?.setErrors({ invalid: true })
           : this.form_textarea.get(this.qaTextareaInput.id)?.reset();
 
         this.form_textarea.updateValueAndValidity();
@@ -432,11 +432,11 @@ export class NaseerComponent implements OnInit {
       case 'disable-textarea':
         this.qaTextareaInput?.formGroup.get(this.qaTextareaInput.id)?.disabled
           ? this.qaTextareaInput?.formGroup
-              .get(this.qaTextareaInput.id)
-              ?.enable()
+            .get(this.qaTextareaInput.id)
+            ?.enable()
           : this.qaTextareaInput?.formGroup
-              .get(this.qaTextareaInput.id)
-              ?.disable();
+            .get(this.qaTextareaInput.id)
+            ?.disable();
         break;
       case 'setErrorDate':
         this.form_date_picker.markAllAsTouched();

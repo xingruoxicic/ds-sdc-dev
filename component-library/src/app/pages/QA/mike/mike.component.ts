@@ -357,11 +357,11 @@ export class MikeComponent implements OnInit {
     if (!this.radioConfig.formGroup.get('radio_1')?.hasError('otherError')) {
       this.radioConfig.formGroup.get('radio_1')?.hasError('required')
         ? this.radioConfig.formGroup
-            .get('radio_1')
-            ?.setErrors({ required: true, otherError: true })
+          .get('radio_1')
+          ?.setErrors({ required: true, otherError: true })
         : this.radioConfig.formGroup
-            .get('radio_1')
-            ?.setErrors({ required: true });
+          .get('radio_1')
+          ?.setErrors({ required: true });
     } else {
       this.radioConfig.formGroup.get('radio_1')?.reset();
     }
@@ -385,7 +385,7 @@ export class MikeComponent implements OnInit {
     }
   }
 
-  constructor(private lang: LangSwitchService) {}
+  constructor(private lang: LangSwitchService) { }
   ngOnInit() {
     this.lang.setAltLangLink('mike');
 
@@ -427,7 +427,7 @@ export class MikeComponent implements OnInit {
       this.iconTesterForm.addControl(i.id, new FormControl());
     });
 
-    this.form.valueChanges.subscribe((x) => {
+    this.form.valueChanges.subscribe((x: { [key: string]: any }) => {
       let updatedConfig: IBannerConfig = {
         id: this.BANNER_ID
       };
@@ -438,7 +438,7 @@ export class MikeComponent implements OnInit {
       }
     });
 
-    this.iconTesterForm.valueChanges.subscribe((x) => {
+    this.iconTesterForm.valueChanges.subscribe((x: { [key: string]: any }) => {
       let updatedConfig: IIconConfig = {
         FA_keywords: this.iconConfig.FA_keywords
       };
@@ -452,7 +452,7 @@ export class MikeComponent implements OnInit {
     });
 
     // code for CTA1:
-    this.ctaForm1.valueChanges.subscribe((x) => {
+    this.ctaForm1.valueChanges.subscribe((x: { [key: string]: any }) => {
       let ctaConf: ICTAConfig = {
         text: '',
         type: 'button'
@@ -504,7 +504,7 @@ export class MikeComponent implements OnInit {
       }
     });
 
-    this.radioTesterForm.valueChanges.subscribe((x) => {
+    this.radioTesterForm.valueChanges.subscribe((x: { [key: string]: any }) => {
       console.log(x);
       for (const param in x) {
         console.log(x[param]);

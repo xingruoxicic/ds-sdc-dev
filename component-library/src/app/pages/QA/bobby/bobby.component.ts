@@ -102,7 +102,7 @@ export class BobbyComponent implements OnInit {
     testFields: this.testerConfigInput
   };
 
-  constructor(private altLang: LangSwitchService) {}
+  constructor(private altLang: LangSwitchService) { }
 
   ngOnInit() {
     this.altLang.setAltLangLink('bobby');
@@ -122,7 +122,7 @@ export class BobbyComponent implements OnInit {
     });
 
     this.form_input.addControl(this.qaInput.id, new FormControl());
-    this.form_input.valueChanges.subscribe((x) => {
+    this.form_input.valueChanges.subscribe((x: { [key: string]: any }) => {
       let updatedConfig: IInputComponentConfig = {
         id: this.INPUT_ID,
         formGroup: this.form_input
