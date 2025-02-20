@@ -41,13 +41,13 @@
     "ircc-ds-angular-component-library": "file:projects/ircc-ds-angular-component-library",
     "marked": "^13.0.0",
     "ngx-highlightjs": "^7.0.1",
-    "ngx-markdown": "^17",
+    "ngx-markdown": "^19",
     "rxjs": "^7.5.0",
     "tslib": "^2.3.0",
-    "zone.js": "^0.14.10"
+    "zone.js": "^0.15"
   },
   "devDependencies": {
-    "@angular-builders/jest": "^17",
+    "@angular-builders/jest": "^19",
     "@angular-devkit/build-angular": "^18",
     "@angular-eslint/builder": "19.1.0",
     "@angular-eslint/eslint-plugin": "19.1.0",
@@ -83,6 +83,6 @@
     "stylelint-config-standard": "~28.0.0",
     "ts-jest": "^29",
     "ts-node": "^10.1.0",
-    "typescript": "~5.4.0"
+    "typescript": "~5.7.0"
   }
 }
