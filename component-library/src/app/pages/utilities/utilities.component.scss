@@ -1,5 +1,5 @@
 @use 'src/scss/grid';
-//@use '~@ircc-ca/ds-sdc-core/typography/typography';
+//@use '@ircc-ca/ds-sdc-core/typography/typography';
 @use '../../../../../core-library/typography/typography';
 app-utilities {
   @include grid.row;
